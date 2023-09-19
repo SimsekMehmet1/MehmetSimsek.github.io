@@ -1,9 +1,13 @@
 body {
-  background-color: grey;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: lightgray;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -41,7 +45,7 @@ li {
 }
 
 .Middle {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   padding: 70px 30px 20px;
   text-align: center;
@@ -52,21 +56,23 @@ li {
 }
 
 .Middle .fa-linkedin {
-  color: blue;
+  color: black;
 }
+
+.Middle .fa-instagram {
+  color: black;
+}
+
 .Middle .fa-envelope {
   color: black;
 }
 
-footer {
+.footer {
   background-color: #ffffff;
-  width: 100%;
-  padding: 70px 30px 20px;
+  padding: 0px;
   text-align: center;
-  font-size: 30px;
-  position: fixed;
-  bottom: 0;
-  height: 9%;
+  font-size: 80px;
+  margin-top: auto;
 }
 
 .footer .fa-github {
@@ -74,32 +80,22 @@ footer {
 }
 
 .footer .fa-linkedin {
-  color: blue;
+  color: black;
 }
 
 .footer .fa-hackerrank {
-  color: green;
+  color: black;
 }
 
 .footer .fa-envelope {
   color: black;
 }
 
-.footNav {
-  text-align: center;
+.footer .fa-instagram {
+  color: black;
 }
 
-/* position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-150%, -50%);
-  font-size: 60px; */
-
-/* .Middle .fa-instagram {
-  color: #000000;
-  position: absolute;
-  top: 120%;
-  left: 80%;
-  transform: translate(-120%, -80%);
-  font-size: 60px;
-} */
+.footNav {
+  text-align: center;
+  background-color: #ffffff;
+}
