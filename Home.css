@@ -1,21 +1,16 @@
-
-
-
 body {
   /* font-family: cursive; */
   /* background-image: url(Background_3.jpg); */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
 
 .navbar {
   display: flex;
@@ -42,9 +37,8 @@ li {
 
 .menu li {
   padding: 5px 14px;
+  list-style: none;
 }
-
-
 
 a#scroll-btn {
     position: absolute;
@@ -65,9 +59,8 @@ a#scroll-btn {
   }
   
   #section-1 {
-    background-color: grey;
+    background-color: lightgray;
   }
-
 
   a#scroll-btn {
     position: absolute;
@@ -117,42 +110,43 @@ a#scroll-btn {
     font-weight: 600;
   }
  
+  #section-1 #iAm {
+    position: absolute;
+    top: 35%;
+    left: 20%; 
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #000000;
+  }
+  #section-1 #name {
+    position: absolute;
+    top: 45%;
+    left: 20%; 
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #000000;
+  }
+  
+  #section-1 #isMy {
+    position: absolute;
+    top: 35%;
+    left: 65%; 
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: black;
+  }
 
-#section-1 h3 {
-  position: absolute;
-  float: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: yellow;
-  font-family: "Times New Roman", Times, serif;
-  font-size: x-large;
-}
-
-#section-1 h1 {
-  position: absolute;
-  float: none;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -54%);
-  color: yellow;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 100px;
-}
-
-#section-1 p {
-  position: absolute;
-  float: none;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -58%);
-  color: yellow;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large; */
-}
+  #section-1 #port {
+    position: absolute;
+    top: 45%;
+    left: 65%; 
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: black;
+  }
 
 #section-2 {
-background-color: grey;
+background-color: lightgray;
     font-size: 2.7em;
     text-align: center;
     display: flex;
@@ -178,6 +172,8 @@ background-color: grey;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    overflow: scroll;
+    background-color: #ffffff;
  
 
 }
@@ -296,10 +292,10 @@ background-color: grey;
   text-align: center;
 }
 
-#section-1 #iAm{
+/* #section-1 #iAm{
   position: absolute;
-  top: 45%;
-  left: 50%;
+  top: 35%;
+  left: 40%;
   transform: translate(-50%, -50%);
   font-size: 100px;
   color: #000000;
@@ -312,10 +308,10 @@ background-color: grey;
   transform: translate(-50%, -50%);
   font-size: 30px;
   color: red;
-}
+} */
 
 
-#section-1 #firstName{
+/* #section-1 #firstName{
   position: absolute;
   top: 55%;
   left: 50%;
@@ -334,14 +330,22 @@ background-color: grey;
   color: yellow;
   font-family: ;
   
-}
+} */
 
-#section-1 #lastName{
+/* #section-1 #lastName{
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 100px;
   color: black;
+} */
 
-}
+  .vLine {
+    border-left: 3px solid white;
+    height: 1020px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
