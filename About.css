@@ -5,8 +5,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: lightgrey;
-  overflow-x: hidden;
+  background-color: black;
+  overflow-x: auto;
 }
 
 .navbar {
@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: white;
+  background-color: #61677a;
 }
 
 .menu a {
@@ -28,7 +28,7 @@ body {
 .menu li:hover {
   background-color: #c51313;
   border-radius: 5px;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .menu li {
@@ -40,124 +40,89 @@ a {
   text-decoration: none;
 }
 
+.mid-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .myImage {
-  position: relative;
-  top: 350px;
-  left: 1000px;
-  right: 0;
-  bottom: 0;
-  width: min-content;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  max-height: 50%;
 }
 
-.firstP {
-  position: relative;
-  top: -300px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-  font-size: 50px;
-}
-
-h1 {
-  position: relative;
-  top: -300px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-}
-
-.secondP {
-  position: relative;
-  top: -300px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-  font-size: 20px;
-}
-
-.thirdP {
-  position: relative;
-  top: -300px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-  font-size: 20px;
+.firstP,
+h1,
+.secondP,
+.thirdP,
+.skills {
+  margin: 20px 0;
 }
 
 .skills {
-  position: relative;
-  top: -300px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer {
-  background-color: #ffffff;
-  /* width: 100%; */
-  padding: 0px;
-  text-align: center;
-  font-size: 80px;
-  margin-top: auto;
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* height: 9%; */
+.skills li {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #61677a;
+  border-radius: 5px;
 }
 
-.footer .fa-github {
-  color: black;
-}
-.footer .fa-linkedin {
-  color: black;
-}
-
-.footer .fa-hackerrank {
-  color: black;
-}
-
-.footer .fa-instagram {
-  color: black;
-}
-
+.footer .fa-github,
+.footer .fa-linkedin,
+.footer .fa-hackerrank,
+.footer .fa-instagram,
 .footer .fa-envelope {
   color: black;
 }
 
-.footNav {
-  text-align: center;
-}
-
 .footer {
-  background-color: #ffffff;
-  /* width:100% ; */
-  padding: 0px;
+  background-color: #61677a;
+  padding: 0;
   text-align: center;
   font-size: 80px;
   margin-top: auto;
 }
 
-.footer .fa-github {
-  color: black;
-}
-
-.footer .fa-linkedin {
-  color: black;
-}
-
-.footer .fa-hackerrank {
-  color: black;
-}
-
-.footer .fa-envelope {
-  color: black;
-}
-
-.footer .fa-instagram {
-  color: black;
-}
-
 .footNav {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #61677a;
+}
+
+@media (max-width: 470px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  .firstP,
+  h1,
+  .secondP,
+  .thirdP {
+    font-size: 14px;
+  }
+
+  .skills li {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .footNav {
+    font-size: 5px;
+  }
+  .myImage {
+    max-height: 50%;
+  }
 }

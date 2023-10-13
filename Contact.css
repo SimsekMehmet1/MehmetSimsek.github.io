@@ -99,3 +99,20 @@ li {
   text-align: center;
   background-color: #ffffff;
 }
+
+@media (max-width: 375px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  .Middle h1 {
+    font-size: 20px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+
+  .footNav {
+    font-size: 5px;
+  }
+}
