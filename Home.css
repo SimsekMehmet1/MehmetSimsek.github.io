@@ -1,23 +1,12 @@
-<!DOCTYPE
-  html
-  > <html
-  lang="en"
-  > <head
-  > <meta
-  charset="UTF-8"
-  > <meta
-  name="viewport"
-  content="width=device-width, initial-scale=1"
-  > <title
-  > Your
-  Web
-  Portfolio</title
-  > <style
-  > body {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 a {
@@ -27,9 +16,9 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px;
-  background-color: white;
+  margin-top: auto;
+  background-color: #61677a;
 }
 
 .menu a {
@@ -39,6 +28,40 @@ a {
 .menu {
   display: flex;
   font-size: 18px;
+}
+.section-1 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.section-1 h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-1 p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 190%);
+}
+
+@media (max-width: 375px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  .section-1 h1,
+  .section-1 p {
+    font-size: 24px;
+  }
 }
 
 .menu li:hover {
@@ -52,167 +75,20 @@ a {
   list-style: none;
 }
 
-a#scroll-btn {
-  position: absolute;
-  height: 10em;
-  width: 6.25em;
-  border: 0.5em solid #ffffff;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 6.25em;
-  border-radius: 3em;
-}
-
-section {
-  height: 100vh;
-  position: relative;
-}
-
-#section-1 {
-  background-color: lightgray;
-}
-
-a#scroll-btn:before {
-  position: absolute;
-  content: "";
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 1.2em;
-  height: 1.2em;
-  width: 1.2em;
-  background-color: #ffffff;
-  border-radius: 50%;
-  animation: move-down 2s infinite;
-}
-
-@keyframes move-down {
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(5.3em);
-    opacity: 0;
-  }
-}
-
-a#scroll-btn:after {
-  position: absolute;
-  content: "PROJECTS";
-  width: 12em;
-  display: block;
-  width: 12em;
-  text-align: center;
-  left: -4.2em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #ffffff;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-#section-1 #iAm,
-#section-1 #name,
-#section-1 #isMy,
-#section-1 #port {
-  position: absolute;
-  font-size: 100px;
-  color: #000000;
-}
-
-#section-1 #iAm {
-  top: 35%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-#section-1 #name {
-  top: 45%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-#section-1 #isMy {
-  top: 35%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: black;
-}
-
-#section-1 #port {
-  top: 45%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: black;
-}
-
-#section-2 {
-  background-color: lightgray;
-  font-size: 2.7em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  #section-1 #iAm,
-  #section-1 #name,
-  #section-1 #isMy,
-  #section-1 #port {
-    font-size: 50px;
-  }
-
-  .footer {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .menu {
-    font-size: 14px;
-  }
-
-  a#scroll-btn {
-    font-size: 12px;
-  }
-
-  .vLine {
-    display: none;
-  }
-}
-
-#section-2 .box {
-  position: relative;
-  width: calc(100% - 80px);
-  height: calc(100% - 80px);
-  background-color: yellow;
-  margin: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #ffffff;
-  overflow-y: scroll;
-}
-
-.content-1 h3,
-.content-2 h3,
-.content-3 h3 {
-  font-size: 50px;
-  color: blue;
-}
-
 .footer {
+  background-color: #61677a;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  font-size: 80px;
+}
+
+.footNav {
   background-color: #ffffff;
   width: 100%;
-  padding: 70px 30px 20px;
+  margin-top: auto;
   text-align: center;
-  font-size: 80px;
+  font-size: 10px;
 }
 
 .footer .fa-github,
@@ -221,17 +97,4 @@ a#scroll-btn:after {
 .footer .fa-envelope,
 .footer .fa-instagram {
   color: black;
-}
-
-.footNav {
-  text-align: center;
-}
-
-.vLine {
-  border-left: 3px solid white;
-  height: 1020px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
 }
