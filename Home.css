@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   max-height: 100vh;
   overflow-y: hidden;
+  font-family: Arial, sans-serif;
 }
 
 a {
@@ -53,17 +53,6 @@ a {
   transform: translate(-50%, 190%);
 }
 
-@media (max-width: 375px) {
-  .menu {
-    font-size: 14px;
-  }
-
-  .section-1 h1,
-  .section-1 p {
-    font-size: 24px;
-  }
-}
-
 .menu li:hover {
   background-color: #c51313;
   border-radius: 5px;
@@ -81,6 +70,7 @@ a {
   margin-top: auto;
   text-align: center;
   font-size: 80px;
+  max-height: 100vh;
 }
 
 .footNav {
@@ -97,4 +87,23 @@ a {
 .footer .fa-envelope,
 .footer .fa-instagram {
   color: black;
+}
+
+@media (max-width: 375px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  .section-1 h1,
+  .section-1 p {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .footNav {
+    font-size: 5px;
+  }
 }
