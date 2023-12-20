@@ -6,7 +6,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: lightgray;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -21,15 +20,17 @@ body {
 .menu a {
   color: #000000;
 }
+
 .menu {
   display: flex;
+  gap: 10px;
   font-size: 18px;
 }
 
 .menu li:hover {
   background-color: #c51313;
   border-radius: 5px;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .menu li {
@@ -45,74 +46,49 @@ li {
 }
 
 .Middle {
-  /* position: absolute; */
   width: 100%;
-  padding: 70px 30px 20px;
+  padding: 20px;
   text-align: center;
-  font-size: 80px;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  font-size: 2em;
 }
 
-.Middle .fa-linkedin {
-  color: black;
-}
-
-.Middle .fa-instagram {
-  color: black;
-}
-
-.Middle .fa-envelope {
-  color: black;
+.Middle a {
+  display: inline-block;
+  margin: 10px;
 }
 
 .footer {
   background-color: #ffffff;
-  padding: 0px;
+  padding: 20px;
   text-align: center;
-  font-size: 80px;
   margin-top: auto;
-}
-
-.footer .fa-github {
-  color: black;
-}
-
-.footer .fa-linkedin {
-  color: black;
-}
-
-.footer .fa-hackerrank {
-  color: black;
-}
-
-.footer .fa-envelope {
-  color: black;
-}
-
-.footer .fa-instagram {
-  color: black;
 }
 
 .footNav {
   text-align: center;
   background-color: #ffffff;
+  padding: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .menu {
-    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 5px 0;
   }
 
   .Middle h1 {
-    font-size: 20px;
+    font-size: 1.5em;
   }
+
   .footer {
-    font-size: 14px;
+    font-size: 1em;
   }
 
   .footNav {
-    font-size: 5px;
+    font-size: 1em;
   }
 }
